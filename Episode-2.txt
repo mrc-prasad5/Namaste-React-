@@ -1,0 +1,55 @@
+               Episode - 2
+
+1. Push the episode 1 code to git.
+2. npm manages packages. Behind the scenes npm work as node package manager. npm means not node package manager.
+3. npm is a standard repository for all the packages.All the utilities and libraries come from npm.
+4. npm takes care of version of the package that is registered.
+5. package.json is a configuration for npm. Keeps a track what versions of npm dependencies have been used.
+6. package.json handles the versions of npm packages used.
+7. The most important package to be used in our project is bundler.
+8. bundler helps to clean, minify and bundle the code to a package.
+9. bundler bundles the app, packages and ship to production
+10.webpack, parcel, veet are some of bundlers
+11.create-react-app uses webpack and bable bundlers.
+12.In this project bundler called parcel is used.
+13.Install the bundler parcel.
+   npm install -D parcel 
+   // -D stands as devdependency. Asking npm to install devdependency
+     Eg: "devDependencies": {
+            "parcel": "^2.11.0"
+           }
+
+           ^ caret symbol before version number states that dependency will be updated the minor version automatically 
+           ~ tilt symbol before version number states that dependency will be updated the major version automatically 
+           Always it is safe to use ^caret symbol
+14.An app can have two dependencies
+   1. devdependencies: these are required in development phase
+   2. dependencies: these are used in production.
+15.package-lock.json keeps a track of exact version of dependency used in the project. 
+   can track exact versions of all the dependencies that are used in local and production environments.
+16.node modules contain all the code of parcel. Contains all the dependencies that project requires.
+17.In this project we installed bundler called parcel as dependency. But parcel will have its own dependencies.
+   All the dependencies will have sub-dependencies. So node modules will have that many folders hich is called
+   Transitive Dependencies.
+18.It is important to push package.json and package-lock.json files to git.
+   Can ignore pushing node_modules to git due to heavy size.
+19.If we have both package.json and package-lock.json files will recreate node_modules.
+20.Below is the command to bundle the project
+   npx parcel index.html
+21.npm command is used to install a package whereas npx is used to execute a package
+22.CDN links are not a preferred way to install ReactJS.
+23.Its a good pratice to maintain ReactJS also as a dependency in the project.
+24.Command to install react as a dependency is
+   npm install react
+   Here we are not -D flag to install react as a devdependency, instead we are installing as a dependency
+25.Similarly we install react dom as well.
+   npm install react-dom
+26.Command to create production build
+   npx parcel build index.html
+27.No need main:"App.js" in package.json file while generating app build using parcel. So can remove it
+28.Parcel generates a dev and prod builds, puts up all code in dist folder.
+29.Can mention browsers list that app should support in package.json file.
+   "browserslist":[
+    "last 10 versions"
+  ]
+30.

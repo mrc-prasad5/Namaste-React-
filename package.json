@@ -1,0 +1,32 @@
+{
+  "name": "namaste_react",
+  "version": "1.0.0",
+  "description": "This is ReactJS learning series",
+  "scripts": {
+    "test": "jest",
+    "start": "rm -rf .parcel-cache && parcel",
+    "build": "rm -rf .parcel-cache && parcel build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrc-prasad5/Namaste-React-.git"
+  },
+  "keywords": [],
+  "author": "M R C Prasad",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mrc-prasad5/Namaste-React-/issues"
+  },
+  "homepage": "https://github.com/mrc-prasad5/Namaste-React-#readme",
+  "devDependencies": {
+    "parcel": "^2.11.0",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "browserslist":[
+    "last 2 versions"
+  ]
+}

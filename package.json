@@ -4,8 +4,8 @@
   "description": "This is ReactJS learning series",
   "scripts": {
     "test": "jest",
-    "start": "rm -rf .parcel-cache && parcel",
-    "build": "rm -rf .parcel-cache && parcel build"
+    "start": "npx parcel index.html",
+    "build": "npx parcel build index.html"
   },
   "repository": {
     "type": "git",

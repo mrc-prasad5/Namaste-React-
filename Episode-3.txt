@@ -1,0 +1,75 @@
+                            Episode - 3
+
+1. Instead of executing npx start and npx build commands can create scripts in package.json file under scripts section. 
+   "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+   }
+
+   or 
+
+   "scripts": {
+    "start": "npx parcel index.html",
+    "build": "npx parcel build index.html"
+   }
+
+   And execute the below commands to start and build the react app.
+   npm run start or npm start
+   npm run build 
+
+2. Just like DOM elements React has react elements which are equivalent to DOM elements.
+3. React element is not a html element. React element is an object.
+4. React.createElement creates an object and when rendered to DOM becomes like html element.
+
+   Eg: const parent = React.createElement("div",{id:"parent"},"Welcome to React");
+       const root = ReactDOM.createRoot(document.getElementById('root'));
+       root.render(parent);
+    
+    ReactDOM converts react element which is an object to html element and renders on the browser
+
+5. To replace the regular way and make developer friendly, more readable of creating react elements JSX was 
+   introduced which is javascript syntax to create react elements.
+
+6. We can write react code without JSX as well, react and JSX both are different. JSX makes developers life easy.
+
+7. JSX is nothing but merging of html and javascript
+
+8. JSX is not HTML in javascript, it is like HTML like syntax i.e., looks like html.
+
+9. A html element in JSX can be created in following way:
+
+   const parent = <h1>Welcome to React</h1>;
+   const parent = React.createElement("div",{id:"parent"},"Welcome to React");
+
+   Above two types of syntaxes are same. Using both ways can create react element.
+
+10.JSX is an easiest syntax or way to create react elements.
+
+11.JS engine cannot understand JSX code. Parcel transpiles the JSX code into React element which is a JS object 
+   with the help of a package called babel and rendered as html element using react method called render.
+
+12.babel is a package called transpiler or js compiler exists behind the scenes of parcel which transpiles 
+   JSX code into react element.
+
+13.Need to use camel case while assigning attributes to html elements in JSX.
+   const parent = <h1 className="root">Welcome to React</h1>;
+
+14.A valid JSX code is written in single line. In order to split the html code in JSX need to enclose within
+   paranthesis.
+   
+15. There are two types of components in React
+    1. Functional component - new way to write code in react
+    2. Class component - old way to write code in react
+
+16.Class components uses js classes whereas Functional components uses js functions to create components
+
+17.Functional component is nothing but a js function which returns some piece of JSX or a react element. 
+   A functional component name should start in capital case.
+
+18.Component inside another component is known as component composition.
+
+19.Can use both arrow functions and normal functions to create react elemments in functional component.
+
+20.JSX sanitizes the data enclosed in curly braces to avoid cross side scriptng.
+
+21.

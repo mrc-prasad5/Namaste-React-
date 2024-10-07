@@ -1,5 +1,3 @@
-               Episode - 2
-
 1. Push the episode 1 code to git.
 2. npm manages packages. Behind the scenes npm work as node package manager. npm means not node package manager.
 3. npm is a standard repository for all the packages.All the utilities and libraries come from npm.

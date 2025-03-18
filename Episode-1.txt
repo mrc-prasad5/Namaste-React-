@@ -3,18 +3,22 @@
  	H/W:
    1.1 What is CDN:  Content Distribution Network is a free and open-source software hosted in remote server.
    1.2 What is crossorigin in script: In order to serve any js library from CDN we use crossorigin attribute. A crossorigin request is a request for a software from another domain.
-2.React is a JavaScript library developed by facebook.
-3.There are two CDN links of React. One is core react library and the other is react library to perform DOM operations.
-4.Method called createElement  is used to create a html element in React
+2. First way of injecting react is to include CDN links.
+3.React is a JavaScript library developed by facebook which gives some helper methods to develop our application.
+4.There are two CDN links of React. One is core react library and the other is react library to perform DOM operations.
+5.Method called createElement  is used to create a html element in React
 Eg: React.createElement(“h1”,{},”Hello World”);
-H1: HTML element
-{}: object is used write attributes to html element. i.e., id, name,…
-Hello World: Inner HTML of element.
-5.Method called createRoot  is used to create a root element to inject html element into DOM.
-Eg: ReactDOM.createRoot(document.getElementById(“root”));
-6.The costliest operation wrt browser is adding or removing elements from DOM
-7.Every react element is an object in browser which has props.
-8.Render method converts react object into html element and attach to DOM
+    h1: HTML element
+    {}: object is used write attributes to html element. i.e., id, name,…
+    Hello World: Inner HTML of element.
+6.Method called createRoot  is used to create a root element to inject html element into DOM.
+  Eg: ReactDOM.createRoot(document.getElementById(“root”));
+7.The costliest operation wrt browser is adding or removing elements from DOM
+8.Every react element is an object in browser which has props.
+9.Render method converts react object into html element and attach to DOM
+10. "__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED" containes react internal functions and states which are not safe to user.
+11. react.development.js is the core react file.
+12. react-dom.development.js used for DOM operations or to modify DOM.    
 
    
 

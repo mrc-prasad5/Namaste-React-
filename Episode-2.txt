@@ -1,12 +1,12 @@
 1. Push the episode 1 code to git.
-2. npm manages packages. Behind the scenes npm work as node package manager. npm means not node package manager.
+2. npm is not node package manager. But npm manages packages. Behind the scenes npm work as node package manager. npm does not stand node package manager.
 3. npm is a standard repository for all the packages.All the utilities and libraries come from npm.
 4. npm takes care of version of the package that is registered.
 5. package.json is a configuration for npm. Keeps a track what versions of npm dependencies have been used.
 6. package.json handles the versions of npm packages used.
 7. The most important package to be used in our project is bundler.
 8. bundler helps to clean, minify and bundle the code to a package.
-9. bundler bundles the app, packages and ship to production
+9. bundler bundles the app, packages and ships to production
 10.webpack, parcel, veet are some of bundlers
 11.create-react-app uses webpack and bable bundlers.
 12.In this project bundler called parcel is used.
@@ -17,17 +17,19 @@
             "parcel": "^2.11.0"
            }
 
-           ^ caret symbol before version number states that dependency will be updated the minor version automatically 
-           ~ tilt symbol before version number states that dependency will be updated the major version automatically 
+           ^ caret symbol before version number states that dependency will be updated the minor version automatically
+           Eg:2.11.x or 2.12.x but not 3.11.0 and major version 2 remains same
+           ~ tilt symbol before version number states that dependency will be updated the patch version automatically 
+           Eg:2.11.1 or 2.11.2 but not 2.12.0
            Always it is safe to use ^caret symbol
-14.An app can have two dependencies
+14.An app can have two types of dependencies
    1. devdependencies: these are required in development phase
    2. dependencies: these are used in production.
-15.package-lock.json keeps a track of exact version of dependency used in the project. 
+15.package-lock.json keeps a track of exact version of dependencies used in the project. 
    can track exact versions of all the dependencies that are used in local and production environments.
 16.node modules contain all the code of parcel. Contains all the dependencies that project requires.
-17.In this project we installed bundler called parcel as dependency. But parcel will have its own dependencies.
-   All the dependencies will have sub-dependencies. So node modules will have that many folders hich is called
+17.In this project we installed bundler called parcel as devdependency. But parcel will have its own dependencies.
+   All the dependencies will have sub-dependencies. So node modules will have that many folders which is called
    Transitive Dependencies.
 18.It is important to push package.json and package-lock.json files to git.
    Can ignore pushing node_modules to git due to heavy size.

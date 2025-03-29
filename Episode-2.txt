@@ -7,7 +7,7 @@
 7. The most important package to be used in our project is bundler.
 8. bundler helps to clean, minify and bundle the code to a package.
 9. bundler bundles the app, packages and ships to production
-10.webpack, parcel, veet are some of bundlers
+10.webpack, parcel, veet, babel are some of bundlers
 11.create-react-app uses webpack and bable bundlers.
 12.In this project bundler called parcel is used.
 13.Install the bundler parcel.
@@ -22,6 +22,7 @@
            ~ tilt symbol before version number states that dependency will be updated the patch version automatically 
            Eg:2.11.1 or 2.11.2 but not 2.12.0
            Always it is safe to use ^caret symbol
+14.npm install react and npm install react-dom as dependencies            
 14.An app can have two types of dependencies
    1. devdependencies: these are required in development phase
    2. dependencies: these are used in production.
@@ -33,7 +34,7 @@
    Transitive Dependencies.
 18.It is important to push package.json and package-lock.json files to git.
    Can ignore pushing node_modules to git due to heavy size.
-19.If we have both package.json and package-lock.json files will recreate node_modules.
+19.If we have both package.json and package-lock.json files can recreate node_modules.
 20.Below is the command to bundle the project
    npx parcel index.html
 21.npm command is used to install a package whereas npx is used to execute a package
@@ -52,4 +53,4 @@
    "browserslist":[
     "last 10 versions"
   ]
-30.
+30. What ever the files or folders that can be recreated can avoid pushing to git.

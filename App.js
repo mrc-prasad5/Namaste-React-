@@ -1,3 +1,6 @@
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+
 //Traditonal React Approach
 
 const parent = React.createElement(

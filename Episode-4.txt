@@ -1,0 +1,28 @@
+1. Name the app: Food Delivery
+
+2. Important phase of developing an app is planning.
+
+3. Should create a visual picture of the application.
+
+4. Inline css styling in ReactJS can be done using JS Object
+   
+Eg: const styleCard = {
+      backgroundColor:'#f0f0f0'
+    }
+
+    const RestoCard = () => {
+        return (
+            <div className='resto-card' style={styleCard}>
+                <h3>Meghana Foods</h3>
+            </div>
+        )
+   }
+
+5. In react a concept called props alias properties called normal JS arguments.
+
+6. Passing a prop to a functional component is nothing like passing arguments to a function.
+
+7. Config Driven UI: Controlling UI using data from API. UI is driven by a config.
+   Eg: Data can be different as per requirement but same UI, same application
+
+8. Inorder to avoid re-rendering of data should use unique key attribute by passing unique value. React doesn`t recommend usage of index as keys.
